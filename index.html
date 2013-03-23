@@ -24,6 +24,12 @@ title: Li Xin's Homepage
 	 </br></br></br></br><br><br>
 	<h2>Latest News</h2>
      <p>新更换青岛号码18863987155，请各位朋友惠存。</p>
+     <ul>
+　　　　{% for post in site.posts %}
+　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　　　{% endfor %}
+
+　　</ul>
     </div>
 	
     <div class="one-third">
@@ -47,10 +53,13 @@ title: Li Xin's Homepage
 	 <p>
 		<a href="http://program.upc.edu.cn/">教学平台</a>
 	 </p>
+	 <p>
+		<a href="http://acm.upc.edu.cn/">中国石油大学（华东）acm</a>
+	 </p>
     </div>
    </div>	
    
-   <div class="next-section margin"><a href="#Publications" class="scrollTo">
+   <div class="next-section margin"><a href="Publications.html" class="scrollTo">
     <img src="images/down.png" title="Scroll to next section" alt="scroll" />
    </a></div>
 </section>
